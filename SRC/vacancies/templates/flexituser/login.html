@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Student Login Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="box1 col-md-5">
+                <div class="card border-dark mb-4 border-4" style="max-width: 25rem;">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">  
+                                    <center> 
+                                        <br /> 
+                                    </center>
+                                </div>
+                            </div>
+
+                    
+                            <div class="row">
+                                <div class="col">
+                                    <center> 
+                                        <h2>Student Login</h2>
+                                    </center>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <hr> 
+                                </div>
+                            </div>
+                            
+                            <form>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  </div>
+
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1">Show password</label>
+                                </div>
+                                
+                                <center>
+                                    <div class="loginbutton">
+                                        <a href="/">
+                                        <button type="button" class="btn btn-primary">Login</button>
+                                        </a>
+                                    </div>
+                                
+                                <br>
+                                <a class="forgotLink" href="http://www.jquery2dotnet.com">Forgot your Password?</a><hr>
+    
+                    <p>Don't have an Account?</p>
+                                <a href="{% url 'register' %}">      
+                                <button type="button" class="btn btn-secondary">Register</button><br>
+                                </a>
+
+                                <div class="or-box">
+                                <span class="or">OR</span>
+              <p>Need to Login to your Company Profile?</p>
+              <button type="button" class="btn btn-secondary">Company Login</button>
+                                </div>
+                                </div>
+                                </center>
+                                
+                                
+                                </form>
+                               
+                              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

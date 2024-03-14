@@ -1,0 +1,102 @@
+{%  extends 'sprint1/main.html' %}
+{% load static %}
+
+{% block content%}
+
+
+
+<br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+
+            <div class="card border-dark mb-4 border-4" style="max-width: 98rem;">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">  
+                                <center> 
+                                    <br /> 
+                                </center>
+                            </div>
+                        </div>
+
+                        <div class="link">
+                            <center>
+                                <h5>Need to Register as a Student?</h5>
+                                <button type="button" class="btn btn-link">Student registration</button>
+                            </center>
+                        </div>
+
+                
+                        <div class="row">
+                            <div class="col">
+                                <center> 
+                                    <h2><b> Registration </b></h2>
+                                </center>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <hr> 
+                            </div>
+                        </div>
+
+                        
+                        <h5>
+                            <form action="" method="POST">
+                                {% csrf_token %}
+                                {{form.as_p}}
+
+
+
+                                <br><hr>
+
+
+                                <center>
+                                    <div class="signUpButton">
+                                        <input type="submit" value="signup" name="submit">
+                                    </div>
+                                </center>
+                            </form>    
+                        </h5>
+
+                         
+
+                               
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var form_fields = document.getElementsByTagName('input')
+            form_fields[1].placeholder='Company name..';
+            form_fields[2].placeholder='Full Name of User..';
+            form_fields[3].placeholder='Company Address - Line 1..';
+            form_fields[4].placeholder='Company Address - Line 2..';
+            form_fields[5].placeholder='City..';
+            form_fields[6].placeholder='Postal Zip Code';
+            form_fields[7].placeholder='Description';
+            form_fields[8].placeholder='Website URL';
+            form_fields[9].placeholder='email@business.com';
+            form_fields[10].placeholder='Contact Number';
+            form_fields[11].placeholder='Username';
+            form_fields[12].placeholder='Password';
+            form_fields[13].placeholder='Re-Enter Password';
+
+
+            for (var field in form_fields){	
+                form_fields[field].className += ' form-control'
+            }
+
+</script>
+
+
+
+{% endblock content%}

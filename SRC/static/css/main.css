@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.box1{
+    margin-left: 30%;
+
+}
+
+.loginbutton > button{
+    padding: 10px 150px;
+}
+
+.signUpButton > button{
+    padding: 20px 200px
+}
+

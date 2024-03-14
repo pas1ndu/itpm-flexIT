@@ -1,0 +1,98 @@
+{%  extends 'sprint1/main.html' %}
+
+{% block content %}
+
+		<br>
+
+        <div class="container">
+            <div class="row">
+                <div class="box1 col-md-5">
+                    <div class="card border-dark mb-4 border-4" style="max-width: 25rem;">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">  
+                                        <center> 
+                                            <br /> 
+                                        </center>
+                                    </div>
+                                </div>
+    
+                        
+                                <div class="row">
+                                    <div class="col">
+                                        <center> 
+                                            <h3>Login</h3>
+                                        </center>
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col">
+                                        <hr> 
+                                    </div>
+                                </div>
+                                
+                                <form action="" method="POST"><h5>
+
+                                    {% csrf_token %}
+
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                      </div>
+    
+                                    <div class="mb-3">
+                                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Show password</label>
+                                    </div>
+                                    
+                                    <center>
+                                        <div class="loginbutton">
+                                            <a button type="button" class="btn btn-primary"  href="{% url 'comprofile' %}">Login</button></a>
+                                        </div>
+                                        <br><br>
+
+
+
+                                        {% for message in messages %}
+                                            <p id="messages">{{message}}</p>
+                                        {% endfor %}
+
+
+
+
+
+                                    
+                                    <br>
+                                    <a class="forgotLink" href="http://www.jquery2dotnet.com">Forgot your Password?</a><hr>
+                    
+                                    <p>Don't have an Account?</p>
+                                    <a button type="button" class="btn btn-secondary" href="{% url 'registerPage' %}">Register</button></a><br>
+    
+                                    <div class="or-box">
+                                    <span class="or">OR</span>
+                                    <p>Need to Login to your Student Profile?</p>
+                                    <button type="button" class="btn btn-secondary">Student Login</button>
+                                    </div>
+                                    </div>
+                                    </center>
+                                    
+                                </h5>
+                                    </form>
+                                   
+                                  
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        
+
+{% endblock content %}
